@@ -32,7 +32,7 @@ b = np.matrix([[1], [10], [1]])
 c = np.matrix([[1], [1], [10]])
 d = np.matrix([[10], [1], [1]])
 
-point_num = 10000
+point_num = 20
 p_l = []
 for _ in range(0,point_num):
     p_array = np.random.uniform(low=0.0, high=10.0, size=(3,))
@@ -49,7 +49,7 @@ for p in p_l:
 tac = datetime.datetime.now()
 print(f"time(ms):{tac-tic}")
 
-sys.exit(0)
+# sys.exit(0)
 
 # Show results.
 def put_scatter(v, color='k'):
@@ -83,7 +83,7 @@ for p,r in zip(p_l, result_l):
         color = 'b'
     put_scatter(p, color=color)
 
-# plt.show()
+plt.show()
 sys.exit(0)
 
 def update(i):

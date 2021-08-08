@@ -35,7 +35,7 @@ a = np.matrix([[2],[2]])
 b = np.matrix([[6],[5]])
 c = np.matrix([[3],[9]])
 
-point_num = 1000
+point_num = 10
 p_l = []
 for _ in range(0,point_num):
     # p_array = np.random.rand(1,2)

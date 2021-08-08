@@ -39,7 +39,7 @@ a = np.squeeze(np.asarray(a))
 b = np.squeeze(np.asarray(b))
 c = np.squeeze(np.asarray(c))
 
-point_num = 1000
+point_num = 20
 p_l = []
 for _ in range(0,point_num):
     # p_array = np.random.rand(1,2)
@@ -58,7 +58,7 @@ for p in p_l:
 tac = datetime.datetime.now()
 print(f"time(ms):{tac-tic}")
 
-sys.exit(0)
+# sys.exit(0)
 
 # Show points and results.
 fig = plt.figure()
@@ -75,6 +75,6 @@ for p,r in zip(p_l, result_l):
         color = 'r'
     else:
         color = 'b'
-    plt.scatter(p[0,0], p[1,0], color=color)
+    plt.scatter(p[0], p[1], color=color)
 
 plt.show()
